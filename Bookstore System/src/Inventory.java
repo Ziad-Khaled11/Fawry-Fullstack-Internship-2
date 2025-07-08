@@ -25,7 +25,7 @@ public class Inventory {
                         System.out.println("1x " + returned.getTitle() + "      " + returned.getPrice());
                         cust.setBalance(cust.getBalance() - returned.getPrice());
                         System.out.println("Your current balance is " + cust.getBalance());
-                        System.out.println("The book is sent to your email" + cust.getEmail());
+                        System.out.println("The book is sent to your email " + cust.getEmail());
                         System.out.println("Thanks for purchasing from our web bookstore");
                     }
                     return;
@@ -237,7 +237,7 @@ public class Inventory {
         Book paper_book2 = new Book(
                 "clean", "Clean Code", LocalDate.of(2008, 8, 1), 39.50, Type.PAPER, 1);
         Book ebook2 = new Book(
-                "design", "Design Patterns (eBook)", LocalDate.of(2015, 3, 10), 550, Type.NEW, 15
+                "design", "Design Patterns", LocalDate.of(2015, 3, 10), 550, Type.NEW, 15
         );
         Inventory.books.put("java", paper_book);
         Inventory.books.put("programming", ebook);
